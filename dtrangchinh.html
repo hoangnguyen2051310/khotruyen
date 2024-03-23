@@ -1,0 +1,260 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trang danh sách truyện</title>
+        <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+        <style>
+                .gallery {
+        display: flex;
+    }
+    .gallery img {
+        width: 250px;
+        height: 400px;
+        margin: 20px;
+        transition: transform 0.2s;
+    }
+    .gallery img:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+    h1 {
+    font-size: 34px; 
+}
+.aa   {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #000508;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: aqua;
+}
+
+.link{
+    text-decoration: none ;
+    color: #010101;
+    margin: 0 10px;
+}
+
+.chea {
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        0%, 49.9%, 100% {
+            opacity: 1;
+        }
+        50%, 99.9% {
+            opacity: 0;
+        }
+    }
+    .chea{
+        background-color: rgb(238, 255, 3);
+    }
+.content {
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+}
+
+.book p {
+    margin-top: 5px;
+}
+.gallery img {
+        width: 450px;
+        height: 500px;
+        margin: 10px;
+        transition: transform 0.2s;
+    }
+    .text {
+    white-space: pre-line;
+    }
+    .menu {
+    display: none;
+    position: absolute;
+    top: 30px; /* Điều chỉnh vị trí menu xuất hiện */
+    left: 0;
+    padding: 10px;
+    z-index: 1; /* Đảm bảo menu hiển thị trên cùng */
+}
+
+.menu a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu a:hover {
+    background-color: #e0e0e0;
+}
+
+.h  {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000508;
+    border-radius: 3px;
+    display: inline-block;
+    background-color: aqua;
+    font-size: 15px;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1 class="chea">TRANG CHỦ DANH SÁCH TRUYỆN </h1>
+        <div class="aa">
+            <a href="trangchu.html" class="link" id="menu-toggle">☰</a>
+            <div class="menu" id="menu">
+                <br></br>
+                <a  class="h" href="truyenhot.html">Truyện Hot</a>
+                <a class="h" href="tacgia.html">Tác Giả</a>
+                <a class="h" href="ngoaitruyen.html">Ngoại Truyện </a>
+            </div>
+            <a href="truyenhot.html" class="link">Truyện Hot </a>    
+            <a href="tranngtruyen.html" class="link">Tập Truyện Khác </a>  
+            <a href="tacgia.html" class="link">Tác Giả</a>
+
+            </div>
+            <br></br>
+            <br></br>
+      
+        <div class="gallery">
+            <div class="book-list">
+                <div class="book">
+                   <a href="laohac.html"><img src="https://bizweb.dktcdn.net/100/370/339/products/z4529778288710-9a538b8bcac451561af81cd240d963a1.jpg?v=1689758099500" alt="Book 1"></a> 
+                     <p><br>Truyện:LÃO HẠC</br>
+                        <a href="laohac.html">Tác giả:NAM CAO</a></br>
+                        phát hành:2018</br>
+                       <a href="noidunglaohac.html">Đọc truyện</a>
+                     </p>
+                </div>
+                <div class="book">
+                    <a href="ndemen.html"><img src="https://sachxuasaigon.com/wp-content/uploads/2020/01/De-men-phieu-luu-ky-1.jpg" alt="Image 2"></a>
+            <p><br>Truyện:DẾ MÈN PHIÊU LƯU KÍ</br>
+                <a href="ndemen.html">Tác giả:TÔ HOÀI</a></br>
+                phát hành:1941</br>
+                <a href="noidungdemen.html" class="linkkk">Đọc truyện</a></br>
+                 </p>
+                 
+
+                </div>
+                <div class="book">
+                    <a href="coman.html"><img src="https://cdn0.fahasa.com/media/catalog/product/s/a/sach-yeu-em-tu-cai-nhin-dau-tien_1.jpg" alt="Image 3"></a>
+            <p><br>Truyện:YÊU EM TỪ CÁI NHÌN ĐẦU TIÊN</br>
+                <a href="coman.html">Tác giả:CỐ MẠN</a></br>
+                Trạng thái:Đang cập nhật</br>
+                <a href="trang1yeuem.html" class="linkkk">Đọc truyện</a></br>
+                 </p>
+
+                </div>
+                <div class="book">
+                    <a href="vonhat.html"><img src="https://bizweb.dktcdn.net/100/370/339/products/vo-nhat-danh-tac.jpg?v=1652416378167" alt="Image 4"></a>
+               
+                    <p><br>VỢ NHẶT</br>
+                        <a href="vonhat.html">Tác Giả :Kim Lân</a></br>
+                        In trong tập: Con chó xấu xí</br>
+                        Sáng Tác :1954</br>
+                        <a href="noidungvonhat.html" class="linkkk">Đọc truyện</a></br>
+                         </p>
+   
+                </div>
+                <div class="book">
+                   <a href="hontruogba.html"> <img src="https://quandoannguhanhson.org.vn/uploads/images/posts/2023-04-23_14-51-36slYlpA_h%E1%BB%93n%20tr%C6%B0%C6%A1ng%20ba%20da%20h%C3%A0ng%20th%E1%BB%8Bt.png" alt="Book 5"></a>
+
+                   <p><br>HỒN TRƯƠNG BA DA HÀNG THỊT</br>
+                    <a href="hontruogba.html">Tác Giả :Lưu Quang Vũ</a></br>
+                    Sáng Tác:viết năm 1981 nhưng đến năm 1984 mới chính thức ra mắt</br>
+                    <a href="noidungvonhat.html" class="linkkk">Đọc truyện</a></br>
+                     </p>
+
+                </div>
+                <div class="book">
+                   <a href="anhhungxadieu.html"> <img src="https://sachtruyen.net/covers/than-dieu-dai-hiep.b8104.cover.jpg" alt="Book 6"></a>
+                   <p><br>THẦN ĐIÊU ĐẠI HIỆP</br>
+                   <a href="anhhungxadieu.html">Tác Giả :Kim Dung</a></br>
+                   Sáng Tác:Đang Cập Nhật</br>
+                   <a href="noidunganhhung.html" class="linkkk">Đọc truyện</a></br>
+                    </p>
+                </div>
+            </div>
+        </div>
+      
+        <script>
+            
+            setTimeout(() => {
+                document.querySelector('.blinking-text').classList.add('stop-blinking');
+            }, 5000); 
+                 
+    var menuToggle = document.getElementById('menu-toggle');
+    var menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('mouseover', function() {
+        menu.style.display = 'block';
+    });
+
+    menuToggle.addEventListener('mouseout', function() {
+        menu.style.display = 'none';
+    });
+
+    menu.addEventListener('mouseover', function() {
+        menu.style.display = 'block';
+    });
+
+    menu.addEventListener('mouseout', function() {
+        menu.style.display = 'none';
+    });
+        </script>
+    </body>
+</html>
