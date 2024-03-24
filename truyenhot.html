@@ -98,7 +98,23 @@ h1 {
 h2{
     font-size: 14px;
 }
-
+#galery {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            @media screen and (max-width: 820px) {
+                #galery {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                }
+            }
+            @media screen and (max-width: 375px) {
+                body { font-size: 1.2em; }
+                #galery {
+                    display: grid;
+                    grid-template-columns: auto;
+                }
+            }
 </style>
     </head>
     <body>
@@ -108,36 +124,65 @@ h2{
        
         <h1 class="chea"> DANH SÁCH TRUYỆN HOT </h1>
             <br></br>
-            
             <div class="gallery">
-            <div class="container">
                 <div class="book-list">
                     <div class="book">
-                        <a href="laohac.html"><img src="https://toquoc.mediacdn.vn/Upload/Article/doanvankhanh/2013/11/15/rez_651_Nam-Cao1.jpg" alt="Book 1"></a>
-                        <a href="laohac.html" class="link">NAM CAO</a></br>
+                       <a href="laohac.html"><img src="https://bizweb.dktcdn.net/100/370/339/products/z4529778288710-9a538b8bcac451561af81cd240d963a1.jpg?v=1689758099500" alt="Book 1"></a> 
+                         <p><br>Truyện:LÃO HẠC</br>
+                            <a href="laohac.html">Tác giả:NAM CAO</a></br>
+                            phát hành:2018</br>
+                           <a href="noidunglaohac.html">Đọc truyện</a>
+                         </p>
                     </div>
                     <div class="book">
-                        <a href="ndemen.html"><img src="https://cdn.vatgia.com/pictures/fullsize/2011/04/04/fyz1301921022.jpg" alt="Image 2"></a>
-                        <a href="ndemen.html" class="link">TÔ HOÀI</a></br>
+                        <a href="ndemen.html"><img src="https://sachxuasaigon.com/wp-content/uploads/2020/01/De-men-phieu-luu-ky-1.jpg" alt="Image 2"></a>
+                <p><br>Truyện:DẾ MÈN PHIÊU LƯU KÍ</br>
+                    <a href="ndemen.html">Tác giả:TÔ HOÀI</a></br>
+                    phát hành:1941</br>
+                    <a href="noidungdemen.html" class="linkkk">Đọc truyện</a></br>
+                     </p>
+                     
+    
                     </div>
                     <div class="book">
-                        <a href="coman.html"><img src="https://ss-images.saostar.vn/wp700/2016/06/04/541709/ngo-thien-5.jpg" alt="Image 3"></a>
-                        <a href="coman.html" class="link">CỐ MẠN</a></br>
+                        <a href="coman.html"><img src="https://cdn0.fahasa.com/media/catalog/product/s/a/sach-yeu-em-tu-cai-nhin-dau-tien_1.jpg" alt="Image 3"></a>
+                <p><br>Truyện:YÊU EM TỪ CÁI NHÌN ĐẦU TIÊN</br>
+                    <a href="coman.html">Tác giả:CỐ MẠN</a></br>
+                    Trạng thái:Đang cập nhật</br>
+                    <a href="trang1yeuem.html" class="linkkk">Đọc truyện</a></br>
+                     </p>
+    
                     </div>
                     <div class="book">
-                        <a href="vonhat.html"><img src="https://nld.mediacdn.vn/ldRiJZu45SPtwvaiFMeTUt4yJXTMrt/Image/2012/01/05/89kimlan_a6d2a.jpg" alt="Image 4"></a>
-                        <a href="vonhat.html" class="link">Kim Lân</a></br>
+                        <a href="vonhat.html"><img src="https://bizweb.dktcdn.net/100/370/339/products/vo-nhat-danh-tac.jpg?v=1652416378167" alt="Image 4"></a>
+                   
+                        <p><br>VỢ NHẶT</br>
+                            <a href="vonhat.html">Tác Giả :Kim Lân</a></br>
+                            In trong tập: Con chó xấu xí</br>
+                            Sáng Tác :1954</br>
+                            <a href="noidungvonhat.html" class="linkkk">Đọc truyện</a></br>
+                             </p>
+       
                     </div>
                     <div class="book">
-                        <a href="hontruogba.html"> <img src="https://danviet.mediacdn.vn/2021/3/20/20210320131513-1616240217837103785617.jpg" alt="Book 5"></a>
-                        <a href="hontruogba.html" class="link">Lưu Quang Vũ</a></br>
+                       <a href="hontruogba.html"> <img src="https://quandoannguhanhson.org.vn/uploads/images/posts/2023-04-23_14-51-36slYlpA_h%E1%BB%93n%20tr%C6%B0%C6%A1ng%20ba%20da%20h%C3%A0ng%20th%E1%BB%8Bt.png" alt="Book 5"></a>
+    
+                       <p><br>HỒN TRƯƠNG BA DA HÀNG THỊT</br>
+                        <a href="hontruogba.html">Tác Giả :Lưu Quang Vũ</a></br>
+                        Sáng Tác:viết năm 1981 nhưng đến năm 1984 mới chính thức ra mắt</br>
+                        <a href="noidungvonhat.html" class="linkkk">Đọc truyện</a></br>
+                         </p>
+    
                     </div>
                     <div class="book">
-                       <a href="anhhungxadieu.html"> <img src="https://kenh14cdn.com/2018/10/30/kimdung2-15409134727071802290689.png" alt="Book 6"></a>
-                        <a href="anhhungxadieu.html" class="link">Kim Dung</a></br>
+                       <a href="anhhungxadieu.html"> <img src="https://sachtruyen.net/covers/than-dieu-dai-hiep.b8104.cover.jpg" alt="Book 6"></a>
+                       <p><br>THẦN ĐIÊU ĐẠI HIỆP</br>
+                       <a href="anhhungxadieu.html">Tác Giả :Kim Dung</a></br>
+                       Sáng Tác:Đang Cập Nhật</br>
+                       <a href="noidunganhhung.html" class="linkkk">Đọc truyện</a></br>
+                        </p>
                     </div>
                 </div>
-            </div>
             </div>
                 <script>
                         setTimeout(() => {

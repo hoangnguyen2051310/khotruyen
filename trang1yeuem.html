@@ -148,7 +148,23 @@ body {
     }
 }
 
-
+#galery {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            @media screen and (max-width: 820px) {
+                #galery {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                }
+            }
+            @media screen and (max-width: 375px) {
+                body { font-size: 1.2em; }
+                #galery {
+                    display: grid;
+                    grid-template-columns: auto;
+                }
+            }
 
 
 </style>
@@ -168,7 +184,7 @@ body {
         <a href="lyeuem.html">quay lại</a>
         <a href='trang2yeuem.html'>đọc tiêp</a>   
     </div> 
-    <p>
+    <p class="galery">
         <br>“Vi Vi, đến Vong Tình Đảo đi, chúng ta ly hôn!”</br>
 
         <br> Bối Vi Vi vừa đăng nhập vào game (trò chơi điện tử) thì thấy ngay tin nhắn của “chồng” mình là Chân</br>

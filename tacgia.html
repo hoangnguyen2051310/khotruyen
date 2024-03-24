@@ -80,8 +80,38 @@ h1 {
 .book p {
     margin-top: 5px;
 }
+@keyframes blink {
+    0% {
+        color: black;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
+}
 
-
+.chea {
+    animation: blink 1s infinite;
+}
+#galery {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            @media screen and (max-width: 820px) {
+                #galery {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                }
+            }
+            @media screen and (max-width: 375px) {
+                body { font-size: 1.2em; }
+                #galery {
+                    display: grid;
+                    grid-template-columns: auto;
+                }
+            }
 </style>
     </head>
     <body>
@@ -89,8 +119,7 @@ h1 {
             <a href="dtrangchinh.html" class="link">Trang Chủ</a>
         </div>
        
-        <h1>
-            DANH SÁCH TÁC GIẢ CÓ TRANG TRANG  </h1>
+        <h1 class="chea">DANH SÁCH TÁC GIẢ CÓ TRONG TRANG  </h1>
             <br></br>
             
             <div class="gallery">
